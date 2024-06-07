@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TipSi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="sub-header" style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('background3.jpg')">
+        <nav>
+            <a href="index.html"> <img src="logotipsi.png"> </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="partner.html">Partner with us</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="login.html">Masuk</a></li>
+                    <li><a href="login.html">Daftar</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>What's On TipSi</h1>
+    </section>
+
+<!--BLOG PAGE-->
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="tipsi1.jpg">
+                <h2>Sekarang telah hadir TipSi</h2>
+                <p>TipSi adalah platform antar jemput dan jasa titip makanan dan sejenisnya untuk kalian para mahasiswa yang merasa harga ojek online kini semakin naik. Ayo segera coba TipSi</p>
+            </div>
+            <div class="blog-left">
+                <img src="tipsi2.jpg">
+                <h2>Mahasiswa terbuka untuk menjadi mitra TipSi</h2>
+                <p>Mahasiswa butuh duit bray, maka dari itu TipSi hadir sebagai solusi bagi kamu mahasiswa butuh duit yang mau memiliki penghasilan sendiri di usia muda. Maka, Ayo daftar menjadi mitra TipSi</p>
+            </div>
+            <div class="blog-left">
+                <img src="tipsi4.jpg">
+                <h2>TipSi memiliki fitur unik yang bernama Temenin</h2>
+                <p>Kami peduli dengan mental health para customer yang suka memendam masalah sendiri, oleh karena itu Temenin hadir untuk para customer yang ingin berbagi keluh kesah kepada driver-driver kami yang pengertian</p>
+            </div>
+        </div>
+
+        <div class="comment-box">
+            <h3>Leave a comment</h3>
+            <form class="comment-form" action="comment.php" method="post">
+                <input type="text" name="name" placeholder="Enter name">
+                <input type="email" name="email" placeholder="Enter email">
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="5" name="message" placeholder="Your comment"></textarea>
+                <button type="submit" class="hero-btn red-btn">Post Comment</button>
+            </form>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+
+    <section class="footer">
+        <div class="social">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-tiktok"></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="partner.html">Partner with us</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+            <li>
+                <a href="Blog.html">Blog</a>
+            </li>
+        </ul>
+
+        <p class="copyright">
+            &copy; 2024 TipSi. All Rights Reserved by TipSi
+        </p>
+    </section>
+
+<!--Java Script-->
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px"
+        }
+    </script>
+
+</body>
+
+</html>
